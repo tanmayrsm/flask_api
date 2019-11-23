@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Completed upload</title>
+	<style>
+	.para{
+		text-align: center;
+	}
+	.pop{
+		
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+	</style>
+</head>
+<body>
+	<p class = "para">Uploaded</p>
+	<br>
+	<img src=" {{url_for('send_image', filename=image_name)}}" class = "pop" width="300" height="300">
+</body>
+</html>

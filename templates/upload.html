@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload</title>
+	<style>
+		.para{
+		text-align: center;
+		}
+		.pop{
+		height : "300px";
+		width : "300px";
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+	</style>
+</head>
+<body>
+	<h1 class="para">Image upload</h1>
+	<form id = "upload-form" action = "{{ url_for('upload') }}" method = "POST" enctype="multipart/form-data" >
+		<input type="file" name="file" accept="image/*" class = "pop">
+		<input type="submit" name="" value = "send" class = "pop">
+	</form>
+</body>
+</html>
